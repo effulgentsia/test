@@ -2,12 +2,14 @@ dist: bionic
 
 language: php
 
-php: 7.4
+php: 7.3
 
-before_install:
-  - sudo echo "deb http://archive.ubuntu.com/ubuntu focal main restricted universe multiverse" > /etc/apt/sources.list
-  - sudo apt-get update
-  - sudo apt-get -y install sqlite3/focal
+# php: 7.4
+
+# before_install:
+#   - sudo echo "deb http://archive.ubuntu.com/ubuntu focal main restricted universe multiverse" > /etc/apt/sources.list
+#   - sudo apt-get update
+#   - sudo apt-get -y install sqlite3/focal
 
 script: php -i
 
